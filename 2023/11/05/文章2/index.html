@@ -14,7 +14,7 @@
 <meta property="og:description" content="#include &lt;conio.h&gt;#include&lt;graphics.h&gt;&#x2F;&#x2F;&#x2F;&#x2F; 界面初始化void UI(){initgraph(840,800);				&#x2F;&#x2F; 窗口初始化大小setbkcolor(LIGHTGRAY);					&#x2F;&#x2F; 设置背景颜色cleardevice();setline">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-11-05T12:37:56.000Z">
-<meta property="article:modified_time" content="2023-11-05T12:38:17.820Z">
+<meta property="article:modified_time" content="2023-11-05T13:18:45.250Z">
 <meta property="article:author" content="Schwarz1617">
 <meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
@@ -99,8 +99,14 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>#include &lt;conio.h&gt;<br>#include&lt;graphics.h&gt;<br>&#x2F;<em><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>&#x2F;<br>&#x2F;&#x2F; 界面初始化<br>void UI()<br>{<br>initgraph(840,800);				&#x2F;&#x2F; 窗口初始化大小<br>setbkcolor(LIGHTGRAY);					&#x2F;&#x2F; 设置背景颜色<br>cleardevice();<br>setlinecolor(BLUE);				&#x2F;&#x2F; 设置绘图颜色<br>setlinestyle(PS_SOLID, 5);&#x2F;&#x2F;设置线的粗线<br>}<br>&#x2F;</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></em>&#x2F;</p>
-<p>&#x2F;&#x2F;主函数实现<br>int main()<br>{<br>UI();<br>&#x2F;&#x2F;start<br>setbkcolor(WHITE);		&#x2F;&#x2F; 设置背景颜色<br>cleardevice();<br>setlinecolor(BLUE);		&#x2F;&#x2F; 设置蓝色<br>circle(200, 200, 100); &#x2F;&#x2F; 画圆，圆心(200, 200)，半径 100</p>
-<pre><code>setlinecolor(BLACK);	// 设置绘图颜色
+<p>&#x2F;&#x2F;主函数实现<br>int main()<br>{<br>    UI();<br>    &#x2F;start</p>
+<pre><code>setbkcolor(WHITE);		// 设置背景颜色
+cleardevice();
+
+setlinecolor(BLUE);		// 设置蓝色
+circle(200, 200, 100); // 画圆，圆心(200, 200)，半径 100
+
+setlinecolor(BLACK);	// 设置绘图颜色
 circle(430, 200, 100); // 画圆，圆心(330, 200)，半径 100
 
 setlinecolor(RED);				// 设置绘图颜色
